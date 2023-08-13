@@ -1,0 +1,24 @@
+Name,URL,Description
+apache / spark,https://github.com/apache/spark,Apache Spark - A unified analytics engine for large-scale data processing
+apache / hadoop,https://github.com/apache/hadoop,Apache Hadoop
+jbhuang0604 / awesome-computer-vision,https://github.com/jbhuang0604/awesome-computer-vision,A curated list of awesome computer vision resources
+GSA / data,https://github.com/GSA/data,Assorted data from the General Services Administration.
+GoogleTrends / data,https://github.com/GoogleTrends/data,An index of all open-source data
+nationalparkservice / data,https://github.com/nationalparkservice/data,An unofficial repository of National Park Service data.
+fivethirtyeight / data,https://github.com/fivethirtyeight/data,Data and code behind the articles and graphics at FiveThirtyEight
+beamandrew / medical-data,https://github.com/beamandrew/medical-data,"5529
+1136"
+src-d / awesome-machine-learning-on-source-code,https://github.com/src-d/awesome-machine-learning-on-source-code,Cool links & research papers related to Machine Learning applied to source code (MLonCode)
+igrigorik / decisiontree,https://github.com/igrigorik/decisiontree,ID3-based implementation of the ML Decision Tree algorithm
+keon / awesome-nlp,https://github.com/keon/awesome-nlp,A curated list of resources dedicated to Natural Language Processing (NLP)
+openai / gym,https://github.com/openai/gym,A toolkit for developing and comparing reinforcement learning algorithms.
+aikorea / awesome-rl,https://github.com/aikorea/awesome-rl,Reinforcement learning resources curated
+umutisik / Eigentechno,https://github.com/umutisik/Eigentechno,Principal Component Analysis on music loops
+jpmckinney / tf-idf-similarity,https://github.com/jpmckinney/tf-idf-similarity,Ruby gem to calculate the similarity between texts using tf*idf
+scikit-learn-contrib / lightning,https://github.com/scikit-learn-contrib/lightning,"Large-scale linear classification, regression and ranking in Python"
+gwding / draw_convnet,https://github.com/gwding/draw_convnet,"2446
+499
+Python"
+scikit-learn / scikit-learn,https://github.com/scikit-learn/scikit-learn,scikit-learn: machine learning in Python
+tensorflow / tensorflow,https://github.com/tensorflow/tensorflow,An Open Source Machine Learning Framework for Everyone
+activeloopai / deeplake,https://github.com/activeloopai/deeplake,"Database for AI. Store Vectors, Images, Texts, Videos, etc. Use with LLMs/LangChain. Store, query, version, & visualize any AI data. Stream data in real-time to PyTorch/TensorFlow. https://activelo…"
