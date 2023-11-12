@@ -16,13 +16,29 @@ print(page)
 soup=bs(page.content,"html.parser")
 scrapped_movies=soup.find_all('h3',class_='ipc-title__text')[1:]
 scrapped_rating=soup.find_all('span',class_='ipc-rating-star ipc-rating-star--base ipc-rating-star--imdb ratingGroup--imdb-rating')[1:]
+scrapped_details=soup.find_all('div',class_='sc-c7e5f54-7 bVlcQU cli-title-metadata')
+year=[]
+run_time=[]
+certificate=[]
+print(type(scrapped_details[0].find_all('span',class_='sc-c7e5f54-8 fiTXuB cli-title-metadata-item'))[2])
 
+for details in scrapped_details:
+    year.append(details.find_all('span',class_='sc-c7e5f54-8 fiTXuB cli-title-metadata-item')[0])
+    run_time.append(details.find_all('span',class_='sc-c7e5f54-8 fiTXuB cli-title-metadata-item')[1])
+    try:
+        certificate.append(details.find_all('span',class_='sc-c7e5f54-8 fiTXuB cli-title-metadata-item')[2])
+    except:
+        pass
 table=[]
-for movie,rating in zip(scrapped_movies,scrapped_rating):
-    table.append([movie.text,rating.text])
+for movie,rating,Y,T,C in zip(scrapped_movies,scrapped_rating,year,run_time,certificate):
+    if C:
+        table.append([movie.text,rating.text,Y.text,T.text,C.text])
+    else :
+        table.append([movie.text,rating.text,Y.text,T.text,"NA"])
+        
 
 #Storing it in data frame and csv
-df=pd.DataFrame(table,columns=['Movie Name','Movie Rating'])
+df=pd.DataFrame(table,columns=['Movie Name','Movie Rating','Year','Run TIme','Certificate'])
 
 folder="csvFiles"
 if not os.path.exists(folder):
